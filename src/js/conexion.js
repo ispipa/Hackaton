@@ -1,26 +1,31 @@
 import { formulario } from "./app.js";
-
+var datos=[];
 export async function response()
 {
     window.addEventListener('load', () => {
         fetch('../data.json')
         .then(response => response.json())
         .then(data => {
-            cargarDatos(data);
+            cogerDatosProductos(data);
         })
     })
 }
-export const cargarDatos = (data)=>
+function cogerDatosProductos(data)
 {
-
+    for(let producto of Object.values(data))
+    {
+        datos.push(producto);
+    }
+}
+export const cargarDatos = ()=>
+{
      resultado.innerHTML='';
      const texto = formulario.value.toLowerCase();
-     for (let i = 0; i < Object.values(data).length; i++) 
+     for (let clave in datos)
      {
-        console.log(Object.values(data)[i]["nombre"]);
-        if(Object.values(data)[i]["nombre"].indexOf(texto)!== -1)
+        if(datos[clave]["nombre"].toLowerCase().indexOf(texto) !== -1)
         {
-            resultado.innerHTML+='<div class="col">'+'<div class="card h-100">'+'<img src='+Object.values(data)[i]["url"]+' class="card-img-top" alt="...">'+'<div class="card-body">'+'<h5 class="card-title">'+Object.values(data)[i]["nombre"]+'</h5>'+'<p class="card-text">'+Object.values(data)[i]["descripcion"]+ '</p>'+'</div>'+'</div>'+'</div>';
+            resultado.innerHTML+='<div class="col">'+'<div class="card h-100">'+'<img src='+datos[clave]["url"]+' class="card-img-top" alt="...">'+'<div class="card-body">'+'<h5 class="card-title">'+datos[clave]["nombre"]+'</h5>'+'<p class="card-text">'+datos[clave]["descripcion"]+ '</p>'+'</div>'+'</div>'+'</div>';
         }
-     }
+    }
 }
