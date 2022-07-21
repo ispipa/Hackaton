@@ -1,7 +1,6 @@
 import { formulario } from "./app.js";
 export var datos=[];
-
-
+var object ="";
 export async function response()
 {
     window.addEventListener('load', () => {
@@ -21,6 +20,7 @@ function cogerDatosProductos(data)
     {
         datos.push(producto);
     }
+    localStorage.setItem("object",JSON.stringify(datos));
 }
 export const filtrar = ()=>
 {
@@ -126,6 +126,7 @@ export function card()
 }
 function printCard(id)
 {
-    console.log(object);
+
+    console.log(JSON.parse(localStorage.getItem("object")));
     console.log(id);
 }
