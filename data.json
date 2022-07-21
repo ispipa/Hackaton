@@ -2,7 +2,7 @@
 
     "0":
     {
-        "nombre":"Entrenador de Campoardiente",
+        "name":"Entrenador de Campoardiente",
         "url":"https://media.wizards.com/2019/eld/sp_a8C2hEIHHm.png",
         "correo":"yutrouyograuti-2303@yopmail.com",
         "numero":"117",
@@ -14,7 +14,7 @@
     },
     "1":
     {
-        "nombre":"Vaca vendida",
+        "name":"Vaca vendida",
         "url":"https://media.wizards.com/2019/eld/sp_kbumrT9KHw.png",
         "correo":"hihigasseprou-7504@yopmail.com",
         "numero":"006",
@@ -25,7 +25,7 @@
     },
     "2":
     {
-        "nombre":"Revoltosa del pantano",
+        "name":"Revoltosa del pantano",
         "url":"https://media.wizards.com/2019/eld/sp_w7LffVhfQ7.png",
         "correo":"crejadequopi-4394@yopmail.com",
         "numero":"080",
@@ -36,7 +36,7 @@
     },
     "3":
     {
-        "nombre":"Acechabrujas feroz",
+        "name":"Acechabrujas feroz",
         "url":"https://media.wizards.com/2019/eld/sp_PQVkbdQIvh.png",
         "correo":"frecilluzenne-2501@yopmail.com",
         "numero":"154",
@@ -47,7 +47,7 @@
     },
     "4":
     {
-        "nombre":"Caballero de la fortaleza",
+        "name":"Caballero de la fortaleza",
         "url":"https://media.wizards.com/2019/eld/sp_1fZu7ye6qz.png",
         "correo":"caprusoukisu-8105@yopmail.com",
         "numero":"019",
@@ -58,7 +58,7 @@
     },
     "5":
     {
-        "nombre":"Arconte armonioso",
+        "name":"Arconte armonioso",
         "url":"https://media.wizards.com/2019/eld/sp_9gAgwpi1gE.png",
         "correo":"wureuffisseuxi-6143@yopmail.com",
         "numero":"017",
@@ -70,7 +70,7 @@
 
     "6":
     {
-        "nombre":"Hada de la animación",
+        "name":"Hada de la animación",
         "url":"https://media.wizards.com/2019/eld/sp_FyW1R9dFHB.png",
         "correo":"socromussaudo-6244@yopmail.com",
         "numero":"038",
