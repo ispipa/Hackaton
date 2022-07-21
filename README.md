@@ -36,7 +36,7 @@ Para poder correr los test usar npm run test.
 
 </ul>
 
-## ✒️ Autores 
+## ✒️ Personas autoras
 <ul>
   <li>Sergio Fernández</li>
   <li>Patricia Rodríguez</li>
