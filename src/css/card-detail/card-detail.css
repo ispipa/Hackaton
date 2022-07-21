@@ -1,54 +1,59 @@
 
 body {
-    display:flex;
-    justify-content: center;
-    padding: 80px;
+    display: flex;
+    align-items: center;
+    padding: 150px;
     font-family: Roboto;
 }
-.col-md-8{
-    display:flex;
-    align-items:center;
-    
-}
-.card-title{
-    display:flex;
-    justify-content: center;
-}
-.card-text{
-    font-size: 18px;
 
+.col-md-8 {
+
+    align-content: flex-end;
+
+}
+
+.card-title {
+    align-items: center;
+}
+
+.card-text {
+    font-size: 18px;
 }
 
 .card-padding {
     padding: 1rem;
 }
+
 .price-text {
     font-size: 24pt;
 }
+
 .volver {
     display: flex;
     justify-content: flex-end;
     text-decoration: none;
     color: black;
 }
-@media (max-width: 576px)   {
-    .card-text{
-        display:flex;
+
+@media (max-width: 576px) {
+    .card-text {
+        display: flex;
         flex-direction: column;
         align-items: center;
-        text-align:center;
-        padding-left:10px;       
+        text-align: center;
+        padding-left: 10px;
     }
-    .card-title{
-        display:flex;
-        justify-content:center;
-        padding-left:10px; 
-}
-    .price-text{
-        display:flex;
-        justify-content:center;
-        padding-left:10px;
-    }
-}
 
+    .card-title {
+        display: flex;
+        justify-content: center;
+        padding-left: 10px;
+    }
+
+    .price-text {
+        display: flex;
+        justify-content: center;
+        padding-left: 10px;
+    }
+}
 
