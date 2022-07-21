@@ -35,3 +35,16 @@ Para poder correr los test usar npm run test.
 <li>Link a la maquetación <a href="https://www.figma.com/file/wXsBc2HRtSzwmheGP5aAZe/Game-of-Coders">ENLACE</a></li>
 
 </ul>
+
+## ✒️ Personas autoras
+<ul>
+  <li>Sergio Fernández</li>
+  <li>Patricia Rodríguez</li>
+  <li>Ana María Adalid</li>
+  <li>Verónica Alonso</li>
+  <li>Ismael Cruz</li>
+  <li>Hudu Fodio</li>
+  <li>Angie Ouspina</li>
+  <li>Belén del Tovar</li>
+  
+</ul>
