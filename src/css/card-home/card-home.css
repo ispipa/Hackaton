@@ -1,5 +1,5 @@
 .personalized-card {
-  width: 75%;
+  min-height: 700px;
   box-shadow: 6px 6px 6px rgb(115, 115, 115);
   padding: 1rem;
 }
@@ -7,8 +7,14 @@
 .view-more-button {
   display: flex;
   justify-content: flex-end;
+  text-decoration: none;
+  color: black;
 }
 
 .bold {
   font-weight: bold;
+}
+
+#result {
+  max-width: 1200px;
 }

@@ -13,4 +13,5 @@ body {
   font-size: 16pt;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
