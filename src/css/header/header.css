@@ -5,6 +5,14 @@
     
     
 }
+.width
+{
+    width: 50%;
+}
+.d-flex {
+    display: flex!important;
+    flex-direction: row-reverse;
+}
 nav.navbar {
     background-color: #2F3678;
 }

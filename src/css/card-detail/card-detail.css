@@ -21,9 +21,7 @@ section
     font-size: 18px;
     
 }
-@media screen {
-    
-}
+
 
 .card-padding {
     margin: auto;
@@ -32,9 +30,28 @@ section
     font-size: 24pt;
 }
 .volver {
+    padding-right: 2rem;
     display: flex;
     justify-content: flex-end;
     text-decoration: none;
     color: black;
+}
+.card-body-exception {
+    flex: 1 1 auto;
+    padding: 0px;
+    color: var(--bs-card-color);
+}
+.text-Magic-cards .text-game-of-coders .text-creative-commons
+{
+     margin-bottom: 0px;
+}
+@media screen and (max-width: 700px)
+{
+    .footer {
+        width: 70%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 

@@ -118,17 +118,15 @@ function printCard(id)
               <div class="col-md-4">
                 <img src='${cards[id]["url"]}' class="img-fluid rounded-start">
               </div>
-              <div class="col-md-8 row">
-                <div class="card-body">
+              <div class="col-md-8">
+                <div class="card-body-exception">
                   <h1 class="card-title">${cards[id]["nombre"]}</h1>
                     <p class="card-text"><strong>Rareza:</strong>${cards[id]["rareza"]}</p>
                     <p class="card-text"><strong>Número:</strong>${cards[id]["numero"]}</p>
                     <p class="card-text"> <strong></strong>${cards[id]["descripcion"]}</p>
                     <p class="card-text"><strong>Contacto:</strong>${cards[id]["correo"]}</p>
                     <p class="price-text"><strong>Precio:</strong>${cards[id]["precio"]}</p>
-                </div>
-                <div>
-                  <a href="./index.html" class="volver"><span class="material-symbols-outlined">home</span><p> Volver</p></a>
+                    <a href="./index.html" class="volver text-end"><span class="material-symbols-outlined">home</span><p> Volver</p></a>
                 </div>
               </div>
             </div>
