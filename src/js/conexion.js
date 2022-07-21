@@ -7,7 +7,6 @@ export async function response()
         .then(response => response.json())
         .then(data => 
         {
-
             getDataCards(data);
             showCards(data);
         })
@@ -132,5 +131,5 @@ function printCard(id)
                 </div>
               </div>
             </div>
-          </div>`;  
+          </div>`;
 }
