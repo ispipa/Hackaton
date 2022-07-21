@@ -17,10 +17,10 @@ export const cargarDatos = (data) => {
     if (Object.values(data)[i]["nombre"].indexOf(texto) !== -1) {
       resultado.innerHTML += `
                 <div class="col">
-                    <div class="card personalized-card-size">
+                    <div class="card personalized-card">
                         <img src='${
                           Object.values(data)[i]["url"]
-                        }' alt="..." style="heigth: 120px;">
+                        }' class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">${
                               Object.values(data)[i]["nombre"]
@@ -41,8 +41,8 @@ export const cargarDatos = (data) => {
                                 }
                             </p>
                         </div>
-                        <div class="view-more-button">
-                            <a href="#"><span class="material-symbols-outlined">
+                        <div>
+                            <a href="#" class="view-more-button"><span class="material-symbols-outlined">
                             visibility
                             </span><p class="corner"> Ver más</p></a>
                         </div>

@@ -1,3 +1,14 @@
-.personalized-card-size {
-  height: 120px;
+.personalized-card {
+  width: 75%;
+  box-shadow: 6px 6px 6px rgb(115, 115, 115);
+  padding: 1rem;
+}
+
+.view-more-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bold {
+  font-weight: bold;
 }

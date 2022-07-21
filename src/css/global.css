@@ -11,4 +11,11 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16pt;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-main {
+  width: 90vw;
+  align-self: center;
 }
