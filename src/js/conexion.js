@@ -51,7 +51,7 @@ export const filter = () => {
                     </p>
                 </div>
                 <div>
-                    <a href="card.html?id=${date[key]["id"]}" class="view-more-button"><span class="material-symbols-outlined">
+                    <a href="card.html?id=${arrayData[key]["id"]}" class="view-more-button"><span class="material-symbols-outlined">
                     visibility
                     </span><p class="corner"> Ver más</p></a>
                 </div>
