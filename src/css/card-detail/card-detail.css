@@ -15,7 +15,20 @@ body {
 }
 .card-text{
     font-size: 18px;
-    
+
+}
+
+.card-padding {
+    padding: 1rem;
+}
+.price-text {
+    font-size: 24pt;
+}
+.volver {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: black;
 }
 @media (max-width: 576px)   {
     .card-text{
@@ -30,7 +43,10 @@ body {
         justify-content:center;
         padding-left:10px; 
 }
-@media (max-width: 768px) {
+    .price-text{
+        display:flex;
+        justify-content:center;
+        padding-left:10px;
+    }
+}
 
-  
- 
