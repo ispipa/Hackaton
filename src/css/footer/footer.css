@@ -1,17 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Josefin+Sans:wght@600&display=swap");
-
- .footer{ 
-  margin: 50px;
-  padding: 0;
-}
-
 #result{ 
   margin: 50px;
   padding: 0;
 }
-
-
-
 
 @media screen and (max-width: 700px) {
   .footer {
@@ -22,8 +12,9 @@
   }
 }
 
-
 .footer {
+  margin: 50px;
+  padding: 0;
   font-weight: 600;
   font-family: "Roboto";
   display: flex;
@@ -48,12 +39,3 @@
   align-items: center;
   justify-content: center;
 }
-
-/*@media screen and (max-width: 700px) {
-  .footer {
-    width: 70%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}*/
