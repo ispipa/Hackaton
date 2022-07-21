@@ -22,7 +22,7 @@ body {
 }
 
 .card-padding {
-    padding: 1rem;
+    margin: auto;
 }
 .price-text {
     font-size: 24pt;
