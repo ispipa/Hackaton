@@ -14,8 +14,3 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-.home-main {
-  width: 90vw;
-  align-self: center;
-}
