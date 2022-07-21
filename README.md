@@ -24,6 +24,7 @@ GRUPO 6 - HACKATON MAGIC MARKET FACTORIA F5
 
 Para poder visualizar el proyecto basta con poner en el terminal el comando npm i. 
 Después se podrá visualizar simplemente el archivo index.html en un navegador. 
+Para poder correr los test usar npm run test.
 
 
 ## 🛠️ Prototype del proyecto
