@@ -1,5 +1,11 @@
-export function card(i) 
+export function card()
 {
-    console.log(datos);
-    console.log(i * 5);    
+    var URLsearch = new URL(window.location.href);
+    const searchParams = new URLSearchParams(URLsearch.search);
+    var id = searchParams.get("id");
+    printCard(id);
+}
+function printCard(id)
+{
+    
 }

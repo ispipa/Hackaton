@@ -1,7 +1,6 @@
 import { formulario } from "./app.js";
-import { card } from "./card.js";
 export var datos=[];
-var i = 0;
+export var Object;
 export async function response()
 {
     window.addEventListener('load', () => {
@@ -9,6 +8,7 @@ export async function response()
         .then(response => response.json())
         .then(data => 
         {
+            
             cogerDatosProductos(data);
             motrarCartas(data);
         })
@@ -58,12 +58,13 @@ export const filtrar = ()=>
                         </p>
                     </div>
                     <div>
-                        <a href="#" class="view-more-button"><span class="material-symbols-outlined">
+                        <a href="card.html" class="view-more-button"><span class="material-symbols-outlined">
                         visibility
                         </span><p class="corner"> Ver más</p></a>
                     </div>
                 </div>
             </div>`;
+           
         }
     }
     if( resultado.innerHTML == '' )
@@ -105,20 +106,13 @@ const motrarCartas = (dato)=>
                                 </p>
                             </div>
                             <div>
-                                <a href="#" class="view-more-button on" id="${i}"
+                                <a href="card.html?id=${datos[clave]["id"]}" class="view-more-button on"
                                 ><span class="material-symbols-outlined">
                                 visibility
                                 </span><p class="corner"> Ver más</p></a>
                             </div>
                         </div>
-                    </div>`; 
-                    ponerOnclick(i);
-                    i++;
+                    </div>`;  
         }
     }
-}
-function ponerOnclick(i)
-{
-    const id = document.getElementById('#'+i);
-    id.onclick = (i) => card(i);
 }
