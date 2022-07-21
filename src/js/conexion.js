@@ -1,46 +1,46 @@
-import { formulario } from "./app.js";
-var datos=[];
+import { form } from "./app.js";
+var arrayData=[];
 export async function response()
 {
     window.addEventListener('load', () => {
         fetch('../data.json')
         .then(response => response.json())
         .then(data => {
-            cogerDatosProductos(data);
-            motrarCartas(data);
+            getDataCards(data);
+            showCards(data);
         })
     })
 }
-function cogerDatosProductos(data)
+ export function getDataCards(data)
 {
-    for(let producto of Object.values(data))
+    for(let product of Object.values(data))
     {
-        datos.push(producto);
+        arrayData.push(product);
     }
 }
-export const filtrar = ()=>
+export const filter = ()=>
 {
-     resultado.innerHTML='';
-     const texto = formulario.value.toLowerCase();
-     for (let clave in datos)
+     result.innerHTML='';
+     const text = form.value.toLowerCase();
+     for (let key in arrayData)
      {
          
-        if(datos[clave]["nombre"].toLowerCase().indexOf(texto) !== -1)
+        if(arrayData[key]["name"].toLowerCase().indexOf(text) !== -1)
         {
-            resultado.innerHTML+='<div class="col">'+'<div class="card h-100">'+'<img src='+datos[clave]["url"]+' class="card-img-top" alt="...">'+'<div class="card-body">'+'<h5 class="card-title">'+datos[clave]["nombre"]+'</h5>'+'<p class="card-text">'+datos[clave]["descripcion"]+ '</p>'+'</div>'+'</div>'+'</div>';
+            result.innerHTML+='<div class="col">'+'<div class="card h-100">'+'<img src='+arrayData[key]["url"]+' class="card-img-top" alt="...">'+'<div class="card-body">'+'<h5 class="card-title">'+arrayData[key]["name"]+'</h5>'+'<p class="card-text">'+arrayData[key]["description"]+ '</p>'+'</div>'+'</div>'+'</div>';
         }
     }
-    if( resultado.innerHTML == '' )
+    if( result.innerHTML == '' )
     {
-        resultado.innerHTML+='<h1>Producto no encontrado</h1>'
+        result.innerHTML+='<h1>Product not found</h1>'
     }
 }
-const motrarCartas = (dato)=>
+const showCards = (date)=>
 {
-     resultado.innerHTML='';
-     for (let clave in Object.values(dato))
+     result.innerHTML='';
+     for (let key in Object.values(date))
      {
          
-            resultado.innerHTML+='<div class="col">'+'<div class="card h-100">'+'<img src='+dato[clave]["url"]+' class="card-img-top" alt="...">'+'<div class="card-body">'+'<h5 class="card-title">'+dato[clave]["nombre"]+'</h5>'+'<p class="card-text">'+dato[clave]["descripcion"]+ '</p>'+'</div>'+'</div>'+'</div>';
+            result.innerHTML+='<div class="col">'+'<div class="card h-100">'+'<img src='+date[key]["url"]+' class="card-img-top" alt="...">'+'<div class="card-body">'+'<h5 class="card-title">'+date[key]["name"]+'</h5>'+'<p class="card-text">'+date[key]["description"]+ '</p>'+'</div>'+'</div>'+'</div>';
     }
 }
