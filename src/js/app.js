@@ -9,5 +9,5 @@ function app()
         filter();
         form.addEventListener('keyup',filter)
     }
-        card();    
+        card();            
 }

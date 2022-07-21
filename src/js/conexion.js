@@ -112,7 +112,7 @@ export function card()
 function printCard(id)
 {
     var cards = JSON.parse(localStorage.getItem("object"));
-
+    console.log(cards);
             result_card.innerHTML +=`<div class="card mb-12 card-padding" style="max-width: 950px;">
             <div class="row g-5">
               <div class="col-md-4">

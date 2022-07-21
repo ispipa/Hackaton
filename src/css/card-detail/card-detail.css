@@ -4,6 +4,10 @@ body {
     padding: 80px;
     font-family: Roboto;
 }
+section
+{
+    margin-top: 4rem;
+}
 .col-md-8{
     display:flex;
     align-items:center;

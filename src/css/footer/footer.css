@@ -11,7 +11,10 @@
     align-items: center;
   }
 }
-
+footer
+{
+  margin-top: 4rem;
+}
 .footer {
   margin: 50px;
   padding: 0;
