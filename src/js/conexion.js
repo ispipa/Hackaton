@@ -8,7 +8,6 @@ export async function response()
         .then(response => response.json())
         .then(data => 
         {
-            //i = Object.keys(data);
             cogerDatosProductos(data);
             motrarCartas(data);
         })
@@ -114,5 +113,5 @@ const motrarCartas = (dato)=>
 }
 function card(i) 
 {
-    console.log(i);    
+    console.log(i * 5);    
 }
