@@ -1,6 +1,7 @@
 import { formulario } from "./app.js";
 export var datos=[];
-export var Object;
+
+
 export async function response()
 {
     window.addEventListener('load', () => {
@@ -8,7 +9,7 @@ export async function response()
         .then(response => response.json())
         .then(data => 
         {
-            
+
             cogerDatosProductos(data);
             motrarCartas(data);
         })
@@ -115,4 +116,16 @@ const motrarCartas = (dato)=>
                     </div>`;  
         }
     }
+}
+export function card()
+{
+    var URLsearch = new URL(window.location.href);
+    const searchParams = new URLSearchParams(URLsearch.search);
+    var id = searchParams.get("id");
+    printCard(id);
+}
+function printCard(id)
+{
+    console.log(object);
+    console.log(id);
 }

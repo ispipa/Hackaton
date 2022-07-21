@@ -1,5 +1,4 @@
-import {response, filtrar} from "./conexion.js";
-import { card } from "./card.js";
+import {response, filtrar, card} from "./conexion.js";
 export const formulario = document.querySelector('#validationCustom01');
 app();
 function app() 
@@ -10,5 +9,8 @@ function app()
         filtrar();
         formulario.addEventListener('keyup',filtrar)
     }
-    card();
+    else
+    {
+        card();
+    }
 }
