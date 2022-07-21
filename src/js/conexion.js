@@ -24,29 +24,29 @@ export const filter = () => {
   const text = form.value.toLowerCase();
   for (let key in arrayData) {
     if (arrayData[key]["name"].toLowerCase().indexOf(text) !== -1) {
-        resultado.innerHTML += `
+        result.innerHTML += `
         <div class="col">
             <div class="card personalized-card">
                 <img src='${
-                    arrayData[clave]["url"]
+                    arrayData[key]["url"]
                 }' class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">${
-                        arrayData[clave]["nombre"]
+                        arrayData[key]["nombre"]
                     }</h5>
                     <p class="card-text">
                         <span class="bold">Rareza: </span>${
-                            arrayData[clave]["rareza"]
+                            arrayData[key]["rareza"]
                         }
                     </p>
                     <p class="card-text">
                         <span class="bold">Número: </span>${
-                            arrayData[clave]["numero"]
+                            arrayData[key]["numero"]
                         }
                     </p>
                     <p class="card-text">
                         <span class="bold">Precio: </span>${
-                            arrayData[clave]["precio"]
+                            arrayData[key]["precio"]
                         }
                     </p>
                 </div>
@@ -66,34 +66,34 @@ export const filter = () => {
 const showCards = (date) => {
   result.innerHTML = "";
   for (let key in Object.values(date)) {
-    resultado.innerHTML += `
+    result.innerHTML += `
     <div class="col">
         <div class="card personalized-card">
             <img src='${
-                date[clave]["url"]
+                date[key]["url"]
             }' class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">${
-                    date[clave]["nombre"]
+                    date[key]["nombre"]
                 }</h5>
                 <p class="card-text">
                     <span class="bold">Rareza: </span>${
-                        date[clave]["rareza"]
+                        date[key]["rareza"]
                     }
                 </p>
                 <p class="card-text">
                     <span class="bold">Número: </span>${
-                        date[clave]["numero"]
+                        date[key]["numero"]
                     }
                 </p>
                 <p class="card-text">
                     <span class="bold">Precio: </span>${
-                        date[clave]["precio"]
+                        date[key]["precio"]
                     }
                 </p>
             </div>
             <div>
-                <a href="card.html?id=${date[clave]["id"]}" class="view-more-button on"
+                <a href="card.html?id=${date[key]["id"]}" class="view-more-button on"
                 ><span class="material-symbols-outlined">
                 visibility
                 </span><p class="corner"> Ver más</p></a>
