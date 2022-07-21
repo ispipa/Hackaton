@@ -1,0 +1,29 @@
+#logo {
+    padding: 2%;
+    width: 40%;
+    margin-left: 5%;
+    
+    
+}
+nav.navbar {
+    background-color: #2F3678;
+}
+
+input::-webkit-input-placeholder {
+    font-family: 'Material Icons Outlined'
+}
+
+input::-moz-placeholder  {
+    font-family: 'Material Icons Outlined';
+}
+
+input:-ms-input-placeholder {
+    font-family: 'Material Icons Outlined';
+}
+
+input:-moz-placeholder {
+    font-family: 'Material Icons Outlined';
+}
+.inputsearch {
+    padding-left: 15px;
+}

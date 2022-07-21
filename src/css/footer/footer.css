@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Josefin+Sans:wght@600&display=swap");
+
+ .footer{ 
+  margin: 50px;
+  padding: 0;
+}
+
+#result{ 
+  margin: 50px;
+  padding: 0;
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+  .footer {
+    width: 70%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+.footer {
+  font-weight: 600;
+  font-family: "Roboto";
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+}
+
+.img-cc {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+}
+
+.text-creative-commons {
+  margin: 0 0 0 2px;
+}
+
+.cc-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*@media screen and (max-width: 700px) {
+  .footer {
+    width: 70%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}*/

@@ -1,27 +1,117 @@
-import { formulario } from "./app.js";
-
+import { form } from "./app.js";
+var arrayData = [];
 export async function response()
 {
     window.addEventListener('load', () => {
         fetch('../data.json')
         .then(response => response.json())
-        .then(data => {
-            cargarDatos(data);
+        .then(data => 
+        {
+
+            getDataCards(data);
+            showCards(data);
         })
     })
 }
-export const cargarDatos = (data)=>
+export function getDataCards(data) {
+  for (let product of Object.values(data)) {
+    arrayData.push(product);
+  }
+  localStorage.setItem("object",JSON.stringify(arrayData));
+}
+export const filter = () => {
+  result.innerHTML = "";
+  const text = form.value.toLowerCase();
+  for (let key in arrayData) {
+    if (arrayData[key]["name"].toLowerCase().indexOf(text) !== -1) {
+        result.innerHTML += `
+        <div class="col">
+            <div class="card personalized-card">
+                <img src='${
+                    arrayData[key]["url"]
+                }' class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">${
+                        arrayData[key]["nombre"]
+                    }</h5>
+                    <p class="card-text">
+                        <span class="bold">Rareza: </span>${
+                            arrayData[key]["rareza"]
+                        }
+                    </p>
+                    <p class="card-text">
+                        <span class="bold">Número: </span>${
+                            arrayData[key]["numero"]
+                        }
+                    </p>
+                    <p class="card-text">
+                        <span class="bold">Precio: </span>${
+                            arrayData[key]["precio"]
+                        }
+                    </p>
+                </div>
+                <div>
+                    <a href="card.html" class="view-more-button"><span class="material-symbols-outlined">
+                    visibility
+                    </span><p class="corner"> Ver más</p></a>
+                </div>
+            </div>
+        </div>`;
+    }
+  }
+  if (result.innerHTML == "") {
+    result.innerHTML += "<h1>Product not found</h1>";
+  }
+};
+const showCards = (date) => {
+  result.innerHTML = "";
+  for (let key in Object.values(date)) {
+    result.innerHTML += `
+    <div class="col">
+        <div class="card personalized-card">
+            <img src='${
+                date[key]["url"]
+            }' class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">${
+                    date[key]["nombre"]
+                }</h5>
+                <p class="card-text">
+                    <span class="bold">Rareza: </span>${
+                        date[key]["rareza"]
+                    }
+                </p>
+                <p class="card-text">
+                    <span class="bold">Número: </span>${
+                        date[key]["numero"]
+                    }
+                </p>
+                <p class="card-text">
+                    <span class="bold">Precio: </span>${
+                        date[key]["precio"]
+                    }
+                </p>
+            </div>
+            <div>
+                <a href="card.html?id=${date[key]["id"]}" class="view-more-button on"
+                ><span class="material-symbols-outlined">
+                visibility
+                </span><p class="corner"> Ver más</p></a>
+            </div>
+        </div>
+    </div>`;  
+  }
+};
+export function card()
+{
+    var URLsearch = new URL(window.location.href);
+    const searchParams = new URLSearchParams(URLsearch.search);
+    var id = searchParams.get("id");
+    printCard(id);
+}
+function printCard(id)
 {
 
-     resultado.innerHTML='';
-     const texto = formulario.value.toLowerCase();
-
-     for (let i = 0; i < Object.values(data).length; i++) 
-     {
-     
-        if((Object.values(data)[i]["nombre"].indexOf(texto)!== -1))
-        {
-            resultado.innerHTML+='<div class="col">'+'<div class="card h-100">'+'<img src='+Object.values(data)[i]["url"]+' class="card-img-top" alt="...">'+'<div class="card-body">'+'<h5 class="card-title">'+Object.values(data)[i]["nombre"]+'</h5>'+'<p class="card-text">'+Object.values(data)[i]["descripcion"]+ '</p>'+'</div>'+'</div>'+'</div>';
-        }
-     }
+    console.log(JSON.parse(localStorage.getItem("object")));
+    console.log(id);
 }
