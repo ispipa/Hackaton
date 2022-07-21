@@ -14,7 +14,7 @@ GRUPO 6 - HACKATON MAGIC MARKET FACTORIA F5
 ## Entrega:
 <ul>
 <li> Un link a un repositorio de github.</li>
-<li>Link al apoyo de la presentación<a href="https://www.canva.com/design/DAFHCPJrpVg/bi4772nwmjQb64vGV07JnA/view?utm_content=DAFHCPJrpVg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">ENLACE</a></li>
+<li>Link al apoyo de la presentación <a href="https://www.canva.com/design/DAFHCPJrpVg/bi4772nwmjQb64vGV07JnA/view?utm_content=DAFHCPJrpVg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">ENLACE</a></li>
 <li>Demo y code review.</li>
 </ul>
 
@@ -31,7 +31,7 @@ Para poder correr los test usar npm run test.
 
 
 <ul>
-<li>Link al sketch<a href="https://balsamiq.cloud/sz29sde/pcsr335/r6B57">ENLACE</a></li>
-<li>Link a la maquetación<a href="https://www.figma.com/file/wXsBc2HRtSzwmheGP5aAZe/Game-of-Coders">ENLACE</a></li>
+<li>Link al sketch <a href="https://balsamiq.cloud/sz29sde/pcsr335/r6B57">ENLACE</a></li>
+<li>Link a la maquetación <a href="https://www.figma.com/file/wXsBc2HRtSzwmheGP5aAZe/Game-of-Coders">ENLACE</a></li>
 
 </ul>
