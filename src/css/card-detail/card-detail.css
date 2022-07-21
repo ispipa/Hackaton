@@ -15,8 +15,22 @@ body {
 }
 .card-text{
     font-size: 18px;
-    ;
-}
-@media screen {
     
 }
+@media (max-width: 576px)   {
+    .card-text{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        text-align:center;
+        padding-left:10px;       
+    }
+    .card-title{
+        display:flex;
+        justify-content:center;
+        padding-left:10px; 
+}
+@media (max-width: 768px) {
+
+  
+ 
