@@ -1,0 +1,21 @@
+@import url('./header/header.css');
+@import url('./footer/footer.css');
+@import url('./card-detail/card-detail.css');
+@import url('./card-home/card-home.css');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16pt;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-main {
+  width: 90vw;
+  align-self: center;
+}

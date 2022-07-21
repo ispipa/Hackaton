@@ -1,0 +1,35 @@
+body {
+    display:flex;
+    justify-content: center;
+    padding: 80px;
+    font-family: Roboto;
+}
+.col-md-8{
+    display:flex;
+    align-items:center;
+    
+}
+.card-title{
+    display:flex;
+    justify-content: center;
+}
+.card-text{
+    font-size: 18px;
+    
+}
+@media screen {
+    
+}
+
+.card-padding {
+    padding: 1rem;
+}
+.price-text {
+    font-size: 24pt;
+}
+.volver {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: black;
+}
