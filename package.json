@@ -1,0 +1,25 @@
+{
+  "name": "game-of-coders",
+  "version": "1.0.0",
+  "description": "emarket project",
+  "main": "index.html",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prlongoria/Game-Of-Coders.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prlongoria/Game-Of-Coders/issues"
+  },
+  "homepage": "https://github.com/prlongoria/Game-Of-Coders#readme",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}

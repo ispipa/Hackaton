@@ -1,10 +1,10 @@
-import {response, filtrar} from "./conexion.js";
+import {response, filter} from "./conexion.js";
 
-export const formulario = document.querySelector('#validationCustom01');
+export const form = document.querySelector('#validationCustom01');
 app();
 function app() 
 {
     response();
-    filtrar();
-    formulario.addEventListener('keyup',filtrar)
+    filter();
+    form.addEventListener('keyup',filter)
 }
