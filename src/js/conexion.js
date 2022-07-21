@@ -67,7 +67,7 @@ const showCards = (date) => {
   result.innerHTML = "";
   for (let key in Object.values(date)) {
     result.innerHTML += `
-    <div class="col">
+    <div class="col" style="">
         <div class="card personalized-card">
             <img src='${
                 date[key]["url"]
