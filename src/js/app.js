@@ -9,8 +9,7 @@ function app()
         filter();
         form.addEventListener('keyup',filter)
     }
-    else
-    {
+
         card();
-    }
+    
 }

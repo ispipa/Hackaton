@@ -23,7 +23,7 @@ export const filter = () => {
   result.innerHTML = "";
   const text = form.value.toLowerCase();
   for (let key in arrayData) {
-    if (arrayData[key]["name"].toLowerCase().indexOf(text) !== -1) {
+    if (arrayData[key]["nombre"].toLowerCase().indexOf(text) !== -1) {
         result.innerHTML += `
         <div class="col">
             <div class="card personalized-card">
@@ -111,7 +111,26 @@ export function card()
 }
 function printCard(id)
 {
+    var cards = JSON.parse(localStorage.getItem("object"));
 
-    console.log(JSON.parse(localStorage.getItem("object")));
-    console.log(id);
+            result_card.innerHTML +=`<div class="card mb-12 card-padding" style="max-width: 950px;">
+            <div class="row g-5">
+              <div class="col-md-4">
+                <img src='${cards[id]["url"]}' class="img-fluid rounded-start">
+              </div>
+              <div class="col-md-8 row">
+                <div class="card-body">
+                  <h1 class="card-title">${cards[id]["nombre"]}</h1>
+                    <p class="card-text"><strong>Rareza:</strong>${cards[id]["rareza"]}</p>
+                    <p class="card-text"><strong>Número:</strong>${cards[id]["numero"]}</p>
+                    <p class="card-text"> <strong></strong>${cards[id]["descripcion"]}</p>
+                    <p class="card-text"><strong>Contacto:</strong>${cards[id]["correo"]}</p>
+                    <p class="price-text"><strong>Precio:</strong>${cards[id]["precio"]}</p>
+                </div>
+                <div>
+                  <a href="./index.html" class="volver"><span class="material-symbols-outlined">home</span><p> Volver</p></a>
+                </div>
+              </div>
+            </div>
+          </div>`;  
 }
