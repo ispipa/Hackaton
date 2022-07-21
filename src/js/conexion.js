@@ -1,4 +1,5 @@
 import { formulario } from "./app.js";
+import { card } from "./card.js";
 export var datos=[];
 var i = 0;
 export async function response()
@@ -104,14 +105,20 @@ const motrarCartas = (dato)=>
                                 </p>
                             </div>
                             <div>
-                                <a href="#" class="view-more-button" onclick=${card(i)}
+                                <a href="#" class="view-more-button on" id="${i}"
                                 ><span class="material-symbols-outlined">
                                 visibility
                                 </span><p class="corner"> Ver más</p></a>
                             </div>
                         </div>
-                    </div>`;
+                    </div>`; 
+                    ponerOnclick(i);
                     i++;
         }
     }
+}
+function ponerOnclick(i)
+{
+    const id = document.getElementById('#'+i);
+    id.onclick = (i) => card(i);
 }
